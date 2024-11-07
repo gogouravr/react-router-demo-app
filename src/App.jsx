@@ -8,7 +8,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/root',
       element: <RootLayout />,
       children: [
         {
@@ -20,7 +20,7 @@ function App() {
           element: <Products />
         },
         {
-          path: 'product/:productId',
+          path: 'products/:productId',
           element: <ProductDetails />
         }
       ],
