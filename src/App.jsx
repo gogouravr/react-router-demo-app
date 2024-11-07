@@ -23,7 +23,8 @@ function App() {
           path: 'product/:productId',
           element: <ProductDetails />
         }
-      ]
+      ],
+      errorElement: <div>404 Not Found</div>
     }
   ])
 
