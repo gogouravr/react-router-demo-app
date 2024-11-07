@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+}
+
+.navbar__list {
+    display: flex;
+    border: 1px solid gree;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar__list--item {
+    list-style: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar__list--item a {
+    color: #333;
+    text-decoration: none;
+}
