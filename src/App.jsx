@@ -8,11 +8,11 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: '/root',
+      path: '/',
       element: <RootLayout />,
       children: [
         {
-          path: '',
+          index: true, // path: ''
           element: <Home />,
         },
         {
