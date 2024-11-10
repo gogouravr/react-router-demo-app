@@ -5,7 +5,7 @@ import EventDetailPage from './pages/EventDetail';
 import NewEventPage from './pages/NewEvent';
 import EditEventPage from './pages/EditEvent';
 import RootLayout from './Layout/RootLayout';
-import EventsRootLayout from './components/EventsRoot';
+import EventsRootLayout from './Layout/EventsRoot';
 
 
 function App() {
