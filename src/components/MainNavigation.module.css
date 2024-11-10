@@ -15,9 +15,14 @@
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+    color: #333;
 }
 
+
 .navbar__list--item a {
-    color: #333;
     text-decoration: none;
+}
+
+.navbar__list-item--active {
+    color: red;
 }
