@@ -6,7 +6,7 @@ export default function MainNavigation() {
         <nav className={styles.navbar}>
             <ul className={styles.navbar__list}>
                 <li className={styles['navbar__list--item']}>
-                    <NavLink to="" className={({ isActive }) => isActive ? styles['navbar__list-item--active'] : undefined}>
+                    <NavLink to="" className={({ isActive }) => isActive ? styles['navbar__list-item--active'] : undefined} end>
                         Home
                     </NavLink>
                 </li>

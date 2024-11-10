@@ -5,6 +5,7 @@ import EventDetailPage from './pages/EventDetail';
 import NewEventPage from './pages/NewEvent';
 import EditEventPage from './pages/EditEvent';
 import RootLayout from './Layout/RootLayout';
+import EventsRootLayout from './components/EventsRoot';
 
 
 function App() {
@@ -19,20 +20,27 @@ function App() {
       },
       {
         path: 'events',
-        element: <EventsPage />,
+        element: <EventsRootLayout />,
+        children: [
+          {
+            index: true,
+            element: <EventsPage />,
+          },
+          {
+            path: ':eventId',
+            element: <EventDetailPage />
+          },
+          {
+            path: 'new',
+            element: <NewEventPage />
+          },
+          {
+            path: ':eventId/new',
+            element: <EditEventPage />
+          }
+        ]
       },
-      {
-        path: 'events/:eventId',
-        element: <EventDetailPage />
-      },
-      {
-        path: 'events/new',
-        element: <NewEventPage />
-      },
-      {
-        path: 'events/:eventId/new',
-        element: <EditEventPage />
-      }]
+      ]
     }
   ])
 
